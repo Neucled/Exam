@@ -1,0 +1,20 @@
+Hping is a command-line TCP/IP packet assembler and analyzer tool that is used to send customized TCP/IP packets and display the target reply as ping command display the ICMP Echo Reply packet from targeted host. Hping can also handle fragmentation, arbitrary packets body, and size and file transfer. It supports TCP, UDP, ICMP and RAW-IP protocols. Using Hping, the following parameters can be performed: -
+
+	Test firewall rules.
+	Advanced port scanning.
+	Testing net performance.
+	Path MTU discovery.
+	Transferring files between even fascist firewall rules.
+	Traceroute-like under different protocols.
+	Remote OS fingerprinting & others
+
+Using Hping commands on Kali Linux, we are pinging a Window 7 host with different customized packets in this lab.
+
+•	To create an ACK packet: root@kali:~# hping3 –A 192.168.0.1
+•	To create SYN scan against different ports: root@kali:~# hping3 -8 1-600 –S 10.10.50.202
+•	To create a packet with FIN, URG, and PSH flags sets root@kali:~# hping3 –F –P -U 10.10.50.202
+ or
+
+USE Advanced IP scanner tool : 
+
+Advanced IP Scanner is a fast and powerful network scanner with a user-friendly interface. In seconds, Advanced IP Scanner can locate all computers on your wired or wireless local network and scan their ports. The program provides easy access to various network resources such as HTTP, HTTPS, FTP, and shared folders.
